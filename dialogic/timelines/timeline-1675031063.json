@@ -1,0 +1,27 @@
+{
+	"events": [
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We don't get many tourists here"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hope we can take you in and feal welcomed to our village"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I set a a special room in our house if you ever need anything"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675031063.json",
+		"name": "InnVillageTalk"
+	}
+}

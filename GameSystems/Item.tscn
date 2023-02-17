@@ -1,0 +1,326 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Fonts/NicoClean-Monospaced.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://GameSystems/Item.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 9
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="Theme" id=9]
+ScrollContainer/styles/bg = SubResource( 3 )
+VScrollBar/styles/grabber = SubResource( 4 )
+VScrollBar/styles/grabber_highlight = SubResource( 5 )
+VScrollBar/styles/grabber_pressed = SubResource( 6 )
+VScrollBar/styles/scroll = SubResource( 7 )
+VScrollBar/styles/scroll_focus = SubResource( 8 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[node name="Item" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Invi" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Invi"]
+margin_right = 256.0
+margin_bottom = 376.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="Invi"]
+margin_right = 8.0
+margin_bottom = 424.0
+
+[node name="ColorRect4" type="ColorRect" parent="Invi"]
+margin_left = 248.0
+margin_right = 256.0
+margin_bottom = 424.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Invi"]
+margin_left = 8.0
+margin_right = 248.0
+margin_bottom = 240.0
+theme = SubResource( 9 )
+custom_styles/bg = SubResource( 10 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Invi/ScrollContainer"]
+margin_right = 208.0
+margin_bottom = 282.0
+
+[node name="Marranitos" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_right = 208.0
+margin_bottom = 22.0
+
+[node name="Marranitos" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Marranitos"]
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Marranitos x1"
+align = 1
+valign = 1
+
+[node name="MarranitosUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Marranitos"]
+margin_left = 160.0
+margin_right = 208.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Torta" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 26.0
+margin_right = 208.0
+margin_bottom = 48.0
+
+[node name="Torta" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Torta"]
+margin_top = 3.0
+margin_right = 96.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Torta x2"
+align = 1
+valign = 1
+
+[node name="TortaUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Torta"]
+margin_left = 100.0
+margin_right = 148.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Concha" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 52.0
+margin_right = 208.0
+margin_bottom = 74.0
+
+[node name="Concha" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Concha"]
+margin_top = 3.0
+margin_right = 108.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Concha x2"
+align = 1
+valign = 1
+
+[node name="ConchaUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Concha"]
+margin_left = 112.0
+margin_right = 160.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Flan" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 78.0
+margin_right = 208.0
+margin_bottom = 100.0
+
+[node name="Flan" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Flan"]
+margin_top = 3.0
+margin_right = 84.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Flan x2"
+align = 1
+valign = 1
+
+[node name="FlanUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Flan"]
+margin_left = 88.0
+margin_right = 136.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="quesadilla" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 104.0
+margin_right = 208.0
+margin_bottom = 126.0
+
+[node name="quesadilla" type="Label" parent="Invi/ScrollContainer/VBoxContainer/quesadilla"]
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Quesadilla x2"
+align = 1
+valign = 1
+
+[node name="quesadillaUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/quesadilla"]
+margin_left = 160.0
+margin_right = 208.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Bizcocho" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 130.0
+margin_right = 208.0
+margin_bottom = 152.0
+
+[node name="Bizcocho" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Bizcocho"]
+margin_top = 3.0
+margin_right = 132.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Bizcocho x2"
+align = 1
+valign = 1
+
+[node name="BizcochoUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Bizcocho"]
+margin_left = 136.0
+margin_right = 184.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Galleta" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 156.0
+margin_right = 208.0
+margin_bottom = 178.0
+
+[node name="Galleta" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Galleta"]
+margin_top = 3.0
+margin_right = 120.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Galleta x2"
+align = 1
+valign = 1
+
+[node name="GalletaUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Galleta"]
+margin_left = 124.0
+margin_right = 172.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Polvoron" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 182.0
+margin_right = 208.0
+margin_bottom = 204.0
+
+[node name="Polvoron" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Polvoron"]
+margin_top = 3.0
+margin_right = 132.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Polvorón x2"
+align = 1
+valign = 1
+
+[node name="PolvoronUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Polvoron"]
+margin_left = 136.0
+margin_right = 184.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Cafe" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 208.0
+margin_right = 208.0
+margin_bottom = 230.0
+
+[node name="Cafe" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Cafe"]
+margin_top = 3.0
+margin_right = 84.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Café x2"
+align = 1
+valign = 1
+
+[node name="CafeUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Cafe"]
+margin_left = 88.0
+margin_right = 136.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Chicharron" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 234.0
+margin_right = 208.0
+margin_bottom = 256.0
+
+[node name="Chicharron" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Chicharron"]
+margin_top = 3.0
+margin_right = 156.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Chicharrón x2"
+align = 1
+valign = 1
+
+[node name="ChicharronUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Chicharron"]
+margin_left = 160.0
+margin_right = 208.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[node name="Rompope" type="HBoxContainer" parent="Invi/ScrollContainer/VBoxContainer"]
+margin_top = 260.0
+margin_right = 208.0
+margin_bottom = 282.0
+
+[node name="Rompope" type="Label" parent="Invi/ScrollContainer/VBoxContainer/Rompope"]
+margin_top = 3.0
+margin_right = 120.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "Rompope x2"
+align = 1
+valign = 1
+
+[node name="RompopeUse" type="Button" parent="Invi/ScrollContainer/VBoxContainer/Rompope"]
+margin_left = 124.0
+margin_right = 172.0
+margin_bottom = 22.0
+custom_fonts/font = SubResource( 1 )
+text = "Use"
+flat = true
+
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Marranitos/MarranitosUse" to="." method="_on_MarranitosUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Torta/TortaUse" to="." method="_on_TortaUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Concha/ConchaUse" to="." method="_on_ConchaUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Flan/FlanUse" to="." method="_on_FlanUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/quesadilla/quesadillaUse" to="." method="_on_quesadillaUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Bizcocho/BizcochoUse" to="." method="_on_BizcochoUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Galleta/GalletaUse" to="." method="_on_GalletaUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Polvoron/PolvoronUse" to="." method="_on_PolvoronUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Cafe/CafeUse" to="." method="_on_CafeUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Chicharron/ChicharronUse" to="." method="_on_ChicharronUse_pressed"]
+[connection signal="pressed" from="Invi/ScrollContainer/VBoxContainer/Rompope/RompopeUse" to="." method="_on_RompopeUse_pressed"]

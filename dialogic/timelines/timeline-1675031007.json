@@ -1,0 +1,41 @@
+{
+	"events": [
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey thare little fella"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Would you like a room for tonight"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675031007.json",
+		"name": "Inn"
+	}
+}

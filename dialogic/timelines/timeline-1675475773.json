@@ -1,0 +1,45 @@
+{
+	"events": [
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Here all better right"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You seam a bit injured but nothing too bad"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What were you doing out in the desert by your self"
+		},
+		{
+			"character": "character-1673229978.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don't remember"
+		},
+		{
+			"character": "character-1673229978.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I woke up and "
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hmm well that cross in your pocket seamed to be writen in latin"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675475773.json",
+		"name": "InitialGreetingasIntheInn"
+	}
+}

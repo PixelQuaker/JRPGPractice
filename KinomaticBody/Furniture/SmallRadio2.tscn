@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/SmallRadio.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=28]
+extents = Vector2( 7, 10 )
+
+[node name="SmallRadio2" type="KinematicBody2D"]
+
+[node name="SmallRadio" type="Sprite" parent="."]
+position = Vector2( 63, 102 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 63, 102 )
+shape = SubResource( 28 )

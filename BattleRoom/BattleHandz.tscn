@@ -1,0 +1,104 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Sprites/BattleHandz.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/PrayerHandz.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/PrayerHandzForMajicks.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/MajickFoarmed.png" type="Texture" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "AttackLeft"
+
+[sub_resource type="Animation" id=3]
+resource_name = "AttackRight"
+
+[sub_resource type="Animation" id=2]
+resource_name = "Idle"
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 4 )
+region = Rect2( 100, 0, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 4 )
+region = Rect2( 100, 100, 100, 100 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 200, 100, 100 )
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "Beam",
+"speed": 12.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="BattleHandz" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/AttackLeft = SubResource( 1 )
+anims/AttackRight = SubResource( 3 )
+anims/Idle = SubResource( 2 )
+
+[node name="BattleHandz" type="Sprite" parent="."]
+position = Vector2( -1, 200 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+vframes = 2
+
+[node name="BattleHandz2" type="Sprite" parent="."]
+position = Vector2( 256, 201 )
+rotation = 3.14159
+scale = Vector2( 2, -2 )
+texture = ExtResource( 1 )
+vframes = 2
+
+[node name="PrayerHandz" type="Sprite" parent="."]
+position = Vector2( -1, 200 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+vframes = 2
+
+[node name="PrayerHandz2" type="Sprite" parent="."]
+position = Vector2( 256, 201 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+vframes = 2
+frame = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PrayerHandzForMajicks" type="Sprite" parent="."]
+position = Vector2( 161, 183 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+vframes = 2
+
+[node name="Beam" type="AnimatedSprite" parent="."]
+position = Vector2( 125, 151 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 9 )
+animation = "Beam"
+frame = 4
+playing = true
+
+[node name="PrayerHandzForMajicks2" type="Sprite" parent="."]
+position = Vector2( 48, 121 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
+vframes = 2
+frame = 1

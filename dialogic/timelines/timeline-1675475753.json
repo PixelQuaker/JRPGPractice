@@ -1,0 +1,87 @@
+{
+	"events": [
+		{
+			"character": "character-1675475777.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What do we do about the child"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We need to send a rescue team"
+		},
+		{
+			"character": "character-1675475762.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I say we go back in and try and find em again"
+		},
+		{
+			"character": "character-1675478976.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Are you series with all those beasts roaming the area"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What choice do we-"
+		},
+		{
+			"character": "character-1675475777.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "ENOUGH OF THIS"
+		},
+		{
+			"character": "character-1675475777.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Now I hope that all of you get your act together to at least try and resolve-"
+		},
+		{
+			"character": "character-1675475777.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Resolve "
+		},
+		{
+			"character": "character-1675475777.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The child made it!!"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh goodness"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I am releaved that you made it"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You don't look so well"
+		},
+		{
+			"character": "character-1675475777.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Lets bring the child inside"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675475753.json",
+		"name": "MeetTheTown"
+	}
+}

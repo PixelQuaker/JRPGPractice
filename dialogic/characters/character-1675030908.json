@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "Takes care of the Inn and can give a room to fully heal you over night",
+	"display_name": "Pina",
+	"display_name_bool": true,
+	"id": "character-1675030908.json",
+	"mirror_portraits": false,
+	"name": "InnKeeper",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

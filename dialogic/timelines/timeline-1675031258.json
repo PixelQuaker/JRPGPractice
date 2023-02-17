@@ -1,0 +1,39 @@
+{
+	"events": [
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hi you can call me Pina I work at the Inn"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We take care of anyone who is lost in the desert"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My son found you lying on the ground in the desert"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I told him not to go thare but now I really am glad that he did"
+		},
+		{
+			"character": "character-1675030908.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Youy can come by anytime to see us"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1675031258.json",
+		"name": "InnKeeperIntro"
+	}
+}

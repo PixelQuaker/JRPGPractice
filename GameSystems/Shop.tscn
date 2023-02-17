@@ -1,0 +1,16 @@
+[gd_scene format=2]
+
+[node name="Shop" type="Node2D"]
+
+[node name="ColorRect7" type="ColorRect" parent="."]
+margin_left = -9.0
+margin_top = -28.0
+margin_right = 271.0
+margin_bottom = 283.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 1.0
+margin_top = 157.0
+margin_right = 263.0
+margin_bottom = 159.0

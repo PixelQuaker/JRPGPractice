@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://KinomaticBody/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Rooms/TIleSets/InsideBuiulding1.tres" type="TileSet" id=2]
+[ext_resource path="res://GameSystems/EntryToBuilding.tscn" type="PackedScene" id=3]
+[ext_resource path="res://KinomaticBody/NPC/InnKeeper.tscn" type="PackedScene" id=4]
+[ext_resource path="res://KinomaticBody/Furniture/TablePost.tscn" type="PackedScene" id=5]
+[ext_resource path="res://KinomaticBody/Furniture/SmallRadio2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://KinomaticBody/Furniture/Chair.tscn" type="PackedScene" id=7]
+[ext_resource path="res://KinomaticBody/Furniture/Table.tscn" type="PackedScene" id=8]
+
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 12.875, 2.23438 )
+
+[node name="Inn" type="Node2D"]
+
+[node name="ColorRect7" type="ColorRect" parent="."]
+margin_left = -188.0
+margin_top = -142.0
+margin_right = 441.0
+margin_bottom = 355.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 25, 25 )
+cell_quadrant_size = 25
+cell_custom_transform = Transform2D( 25, 0, 0, 25, 0, 0 )
+show_collision = true
+format = 1
+tile_data = PoolIntArray( 262141, 5, 0, 262142, 5, 0, 262143, 5, 0, 196608, 5, 0, 196609, 5, 0, 196610, 5, 0, 196611, 5, 0, 196612, 5, 0, 196613, 5, 0, 196614, 5, 0, 196615, 5, 0, 196616, 5, 0, 327677, 0, 0, 327678, 0, 0, 327679, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 13, 0, 393213, 0, 0, 393214, 0, 0, 393215, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 13, 0, 458749, 13, 0, 458750, 0, 0, 393216, 13, 0, 393217, 13, 0, 393218, 13, 0, 393219, 13, 0, 393220, 13, 0, 393221, 13, 0, 393222, 13, 0, 393223, 0, 0, 393224, 13, 0, 393225, 13, 0 )
+
+[node name="NPC1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 99, 96 )
+
+[node name="SmallRadio2" parent="." instance=ExtResource( 6 )]
+
+[node name="TablePost" parent="." instance=ExtResource( 5 )]
+
+[node name="Chair" parent="." instance=ExtResource( 7 )]
+position = Vector2( 130, 101 )
+
+[node name="Table" parent="." instance=ExtResource( 8 )]
+position = Vector2( 22, 128 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 98, 130 )
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
+remote_path = NodePath("../../../Camera2D")
+
+[node name="Inn" parent="." instance=ExtResource( 3 )]
+position = Vector2( 207, 406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inn"]
+position = Vector2( -245, -229 )
+shape = SubResource( 26 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 98, 130 )
+current = true
+zoom = Vector2( 0.8, 0.8 )
+process_mode = 0
+limit_left = -75
+limit_top = 30
+limit_right = 225
+limit_bottom = 200
+smoothing_speed = 10.0
+editor_draw_limits = true

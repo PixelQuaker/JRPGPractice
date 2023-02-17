@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DesertOreganSample1.mp3-608d731dd2d72442a1406c7bd2687e16.mp3str"
+
+[deps]
+
+source_file="res://OST/DesertOreganSample1.mp3"
+dest_files=[ "res://.import/DesertOreganSample1.mp3-608d731dd2d72442a1406c7bd2687e16.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DesertAmbient1.mp3-406e8b4ffa2150c2f126dd182b306a5c.mp3str"
+
+[deps]
+
+source_file="res://OST/DesertAmbient1.mp3"
+dest_files=[ "res://.import/DesertAmbient1.mp3-406e8b4ffa2150c2f126dd182b306a5c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
